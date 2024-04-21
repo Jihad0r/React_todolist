@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: hsl(210, 36%, 96%);
+}
+.sign-up {
+  padding: 1rem;
+  background-color: #00b2ac;
+  border-radius: 0.7rem;
+  width: 50%;
+  text-align: center;
+}
+.sign-up input {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.15rem solid #1925b8;
+  margin-bottom: 1rem;
+}
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.inputs input {
+  width: 40%;
+}
+select {
+  width: 40%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.15rem solid #1925b8;
+  margin-bottom: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 3rem;
+  align-items: center;
+  background-color: white;
+  box-shadow: #0000004d 0rem 0rem 11px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  transition: 2s;
+}
+.bar {
+  display: none;
+}
+li {
+  list-style: none;
+  margin-left: 1rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+h3 {
+  padding-left: 1rem;
+  color: #1925b8;
+  cursor: pointer;
+}
+main {
+  text-align: center;
+  margin: 2rem auto 0;
+  padding: 2rem;
+}
+.list {
+  font-size: 1.5rem;
+}
+h2 {
+  width: 80%;
+}
+form {
+  z-index: -1;
+  margin: auto;
+  width: 90%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form a {
+  color: blue;
+}
+input[type="text"] {
+  width: 80%;
+  background-color: #ebebeb;
+  border: none;
+  padding: 1rem 0rem 1rem 2rem;
+  border-radius: 0.7rem;
+}
+button[type="submit"] {
+  width: 30%;
+  background-color: #ff8c0a;
+  border: none;
+  padding: 1rem 0rem;
+  font-weight: bold;
+  border-radius: 0.7rem;
+  margin-left: -1rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+input[type="radio"] {
+  cursor: pointer;
+}
+
+.data {
+  display: grid;
+  grid-template-rows: auto;
+  margin: 1rem auto;
+  width: 80%;
+  grid-template-columns: auto auto;
+  padding: 1rem;
+}
+.des label {
+  display: block;
+}
+.date label {
+  margin-top: 1rem;
+  width: 4rem;
+  display: inline-block;
+}
+.date input {
+  border-radius: 0.7rem;
+  padding: 0.3rem 0.1rem;
+  border: 0.2rem solid #3f8a3f;
+  width: 10rem;
+}
+.des {
+  grid-column: 1 / 3;
+}
+textarea {
+  border: 0.2rem solid black;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  height: 6rem;
+  width: 100%;
+}
+.categories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+.tasks {
+  width: 80%;
+  margin: 5rem auto;
+}
+.task {
+  width: 80%;
+  padding: 0 1rem 0.1rem;
+  background-color: #a4c991;
+  border-radius: 0.5rem;
+}
+.task div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  font-size: 1rem;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+@media (max-width: 900px) {
+  ul {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    display: block;
+    left: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    /* right: 0; */
+    background-color: white;
+    box-shadow: #0000004d 0rem 0rem 11px;
+    transition: 1s;
+    opacity: 0;
+  }
+  .show {
+    top: 8%;
+    right: 0;
+    /* display: block; */
+    transition: 1s;
+    opacity: 1;
+  }
+  .bar {
+    display: block;
+  }
+  li {
+    padding: 1rem;
+  }
+  li:hover {
+    background-color: #43bae9;
+  }
+  .inputs {
+    display: block;
+  }
+  .inputs input {
+    width: 80%;
+    display: block;
+    margin: 1rem auto;
+  }
+  select {
+    width: 90%;
+  }
+  .sign-up {
+    width: unset;
+  }
+  form {
+    width: 80%;
+  }
+  .data {
+    display: unset;
+  }
+  textarea {
+    height: 5rem;
+    width: 100%;
+  }
+}
